@@ -1,0 +1,20 @@
+{
+    "ip_address_key": "remoteAddr",
+    "method_key": "method",
+    "path_key": "url",
+    "status_code_key": "status",
+
+    "ignored_routes": [
+        "^GET /assets/",
+        "^GET /favicon\.ico$",
+        "^GET /$"
+    ],
+
+    "custom": [
+        {
+            "title": "logins",
+            "route": "^POST /login$",
+            "success_status": 200
+        }
+    ]
+}
