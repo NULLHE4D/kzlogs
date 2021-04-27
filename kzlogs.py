@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group()
-    group.add_argument("-s", "--single", type=single_date_regex_type, help="date of file log (YYMMDD)")
+    group.add_argument("-s", "--single", type=single_date_regex_type, help="date of file log (YYYYMMDD)")
     group.add_argument("-r", "--range", type=date_range_regex_type, help="date range of file logs (DATE1-DATE2) (same format as with -s flag)")
     parser.add_argument("-c", "--config", default="kzlogs.json", help="path to JSON configuration file")
     parser.add_argument("-d", "--dir", required=True, help="log directory")
